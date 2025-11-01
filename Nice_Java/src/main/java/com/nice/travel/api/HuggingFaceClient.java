@@ -37,7 +37,8 @@ public class HuggingFaceClient {
                 .post(body)
                 .build();
 
-            try (Response response = client.newCall(request).execute()) {
+            Response response = client.newCall(request).execute();
+            try {
                 if (response.isSuccessful() && response.body() != null) {
                     String responseBody = response.body().string();
                     JsonArray result = gson.fromJson(responseBody, JsonArray.class);
@@ -46,6 +47,8 @@ public class HuggingFaceClient {
                         return result.get(0).getAsJsonObject().get("summary_text").getAsString();
                     }
                 }
+            } finally {
+                response.close();
             }
         } catch (IOException e) {
             // Fall back to "Not generated"
