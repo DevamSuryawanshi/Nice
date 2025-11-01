@@ -1,0 +1,28 @@
+# Build artifacts
+target/
+out/
+bin/
+
+# IDE files
+.idea/
+.vscode/
+.classpath
+.project
+*.iml
+
+# Compiled files
+*.class
+*.jar
+*.war
+*.ear
+
+# Log files
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
