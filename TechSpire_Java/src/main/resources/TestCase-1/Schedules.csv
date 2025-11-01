@@ -1,7 +1,0 @@
-Origin,Destination,Distance,TravelTime,Cost
-Mumbai,Delhi,1400.5,120.0,5000
-Delhi,Bangalore,2100.8,180.0,7500
-Bangalore,Chennai,350.2,45.0,2000
-Chennai,Kolkata,1650.7,150.0,6000
-Mumbai,Bangalore,980.3,90.0,4500
-Delhi,Chennai,2200.1,200.0,8000
