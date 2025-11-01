@@ -1,0 +1,28 @@
+{
+  "requests": [
+    {
+      "request_id": "request_id1",
+      "source": "A",
+      "destination": "C",
+      "criteria": "Time"
+    }
+  ],
+  "routes": [
+    {
+      "source": "A",
+      "destination": "B",
+      "mode": "Bus",
+      "departureTime": "08:00",
+      "arrivalTime": "10:00",
+      "cost": 150
+    },
+    {
+      "source": "B",
+      "destination": "C",
+      "mode": "Bus",
+      "departureTime": "10:30",
+      "arrivalTime": "12:30",
+      "cost": 150
+    }
+  ]
+}
